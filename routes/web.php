@@ -7,9 +7,9 @@ Route::get('/', function () {
     return view('welcome');
 })->name('home');
 
-Route::get('/home', function () {
+Route::get('/accueil', function () {
     return view('components.layouts.accueil');
-});
+})->name('accueil');
 
 
 Route::view('dashboard', 'dashboard')
