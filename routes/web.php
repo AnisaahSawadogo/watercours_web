@@ -7,6 +7,11 @@ Route::get('/', function () {
     return view('welcome');
 })->name('home');
 
+Route::get('/home', function () {
+    return view('components.layouts.accueil');
+});
+
+
 Route::view('dashboard', 'dashboard')
     ->middleware(['auth', 'verified'])
     ->name('dashboard');
